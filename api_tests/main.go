@@ -96,7 +96,7 @@ func testAPI() error {
 		"", // not empty on actual client
 		"", // not empty on actual client
 		util.GetTimestamp(),
-		"PC",
+		"Nyein Ko Ko Aung",
 		"Android",
 		"en_US",
 	}
