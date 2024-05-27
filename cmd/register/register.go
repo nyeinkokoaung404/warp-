@@ -5,7 +5,7 @@ import (
 	"log"
 
 	"github.com/ViRb3/wgcf/cloudflare"
-	. "github.com/ViRb3/wgcf/cmd/shared"
+	. "github.com/nyeinkokoaung404/warp-/cmd/shared"
 	"github.com/ViRb3/wgcf/config"
 	"github.com/ViRb3/wgcf/util"
 	"github.com/ViRb3/wgcf/wireguard"
