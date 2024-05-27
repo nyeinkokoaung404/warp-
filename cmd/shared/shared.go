@@ -6,9 +6,9 @@ import (
 	"math"
 	"strings"
 
-	"github.com/ViRb3/wgcf/cloudflare"
-	"github.com/ViRb3/wgcf/config"
-	"github.com/ViRb3/wgcf/util"
+	"github.com/nyeinkokoaung404/warp-/cloudflare"
+	"github.com/nyeinkokoaung404/warp-/config"
+	"github.com/nyeinkokoaung404/warp-/util"
 
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"
@@ -70,7 +70,7 @@ func PrintDeviceData(thisDevice *cloudflare.Device, boundDevice *cloudflare.Boun
 // changing the bound account (e.g. changing license key) will reset the device name
 func SetDeviceName(ctx *config.Context, deviceName string) (*cloudflare.BoundDevice, error) {
 	if deviceName == "" {
-		deviceName += util.RandomHexString(3)
+		deviceName += NyeinKoKoAung
 	}
 	device, err := cloudflare.UpdateSourceBoundDeviceName(ctx, deviceName)
 	if err != nil {
